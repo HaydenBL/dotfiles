@@ -31,10 +31,7 @@ alias vf='cd'
 # ----------------------------- #
 
 # type 1
-PS1='
-~$PWD
-==> '
+PS1="\n\w\n==> "
 
 # type 2
 #export PS1="\n\w\n@\u - \d - \@\n==> \[$(tput sgr0)\]"
-
