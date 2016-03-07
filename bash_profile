@@ -31,7 +31,10 @@ alias vf='cd'
 # ----------------------------- #
 
 # type 1
-PS1="\n\w\n==> "
+#PS1="\n\w\n==> "
 
 # type 2
 #export PS1="\n\w\n@\u - \d - \@\n==> \[$(tput sgr0)\]"
+
+# type 3
+export PS1="\[\033[38;5;9m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\] in \[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n$ \[$(tput sgr0)\]"
