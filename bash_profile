@@ -12,7 +12,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 # ----------------------------- #
 # aliases                       #
 # ----------------------------- #
-alias ls='ls -F' # show directories when you type ls
+alias ls='ls -a' # show everything when you type ls
 alias h='history'
 alias up='cd ..'
 alias ..='cd ..'
@@ -38,3 +38,16 @@ alias vf='cd'
 
 # type 3
 export PS1="\[\033[38;5;9m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\] in \[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n$ \[$(tput sgr0)\]"
+##
+# Your previous /Users/haydenlueck/.bash_profile file was backed up as /Users/haydenlueck/.bash_profile.macports-saved_2016-11-27_at_21:30:47
+##
+
+# MacPorts Installer addition on 2016-11-27_at_21:30:47: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+# Setting PATH for Python 3.8
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
+export PATH
