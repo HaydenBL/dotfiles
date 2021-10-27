@@ -28,6 +28,9 @@ alias cp='cp -i'
 alias xs='cd'
 alias vf='cd'
 
+# misc
+alias icons='open ~/alt-icons/favorites/ && open /Applications/' # for when app update replaces a custom icon
+
 # ----------------------------- #
 # custom prompts                #
 # ----------------------------- #
