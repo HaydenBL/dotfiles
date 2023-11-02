@@ -1,4 +1,4 @@
-export BASH_SILENCE_DEPRECATION_WARNING=1
+export PATH="$HOME/.local/pipx/venvs:$PATH"
 
 # ----------------------------- #
 # enable colors                 #
@@ -66,3 +66,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# Created by `pipx` on 2023-11-02 23:13:00
+export PATH="$PATH:/Users/haydenlueck/.local/bin"
