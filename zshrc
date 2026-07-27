@@ -1,5 +1,11 @@
 export PATH="$HOME/.local/pipx/venvs:$PATH"
 
+NEWLINE=$'\n'
+PROMPT=%F{blue}%~%f${NEWLINE}%F{green}"%n%f $ "
+
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
+source $ZPLUG_HOME/init.zsh
+
 # ----------------------------- #
 # enable colors                 #
 # ----------------------------- #
@@ -9,7 +15,6 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 # for light backgrounds
 # export LSCOLORS=ExFxCxDxBxegedabagacad
-
 
 # ----------------------------- #
 # aliases                       #
@@ -42,7 +47,7 @@ alias icons='open ~/alt-icons/favorites/ && open /Applications/' # for when app 
 #export PS1="\n\w\n@\u - \d - \@\n==> \[$(tput sgr0)\]"
 
 # type 3
-export PS1="\[\033[38;5;9m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\] in \[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n$ \[$(tput sgr0)\]"
+# export PS1="\[\033[38;5;9m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\] in \[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n$ \[$(tput sgr0)\]"
 ##
 # Your previous /Users/haydenlueck/.bash_profile file was backed up as /Users/haydenlueck/.bash_profile.macports-saved_2016-11-27_at_21:30:47
 ##
