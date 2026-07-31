@@ -36,6 +36,10 @@ alias vf='cd'
 # misc
 alias icons='open ~/alt-icons/favorites/ && open /Applications/' # for when app update replaces a custom icon
 
+# case insensitive autocomplete
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+autoload -Uz compinit && compinit
+
 # ----------------------------- #
 # custom prompts                #
 # ----------------------------- #
