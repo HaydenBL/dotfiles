@@ -1,10 +1,25 @@
 export PATH="$HOME/.local/pipx/venvs:$PATH"
 
 NEWLINE=$'\n'
-PROMPT=%F{blue}%~%f${NEWLINE}%F{green}"%n%f $ "
+
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats ' %F{yellow}(%b)%f'
+setopt PROMPT_SUBST
+
+PROMPT='%F{blue}%~%f${vcs_info_msg_0_}${NEWLINE}%F{green}%n%f $ '
 
 export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
+
+# syntax-highlighting must be sourced before autosuggestions, hence the defer tiers
+zplug "zsh-users/zsh-syntax-highlighting", as:plugin, defer:2
+zplug "zsh-users/zsh-autosuggestions", as:plugin, defer:3
+
+if ! zplug check; then
+    zplug install
+fi
+zplug load
 
 # ----------------------------- #
 # enable colors                 #
